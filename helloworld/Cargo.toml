@@ -1,0 +1,7 @@
+[package]
+name = "helloworld"
+version = "0.1.0"
+authors = ["AlfieriChou <alfierichou@gmail.com>"]
+edition = "2018"
+
+[dependencies]
