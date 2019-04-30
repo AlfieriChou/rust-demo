@@ -1,19 +1,21 @@
 #[macro_use]
 extern crate log;
-extern crate env_logger;
-
-use log::Level;
+extern crate simple_logger;
 
 fn main() {
-  env_logger::init();
+  simple_logger::init().unwrap();
 
   debug!("this is a debug {}", "message");
   error!("this is printed by default");
 
-  if log_enabled!(Level::Info) {
-    let x = 3 * 4; // expensive computation
-    info!("the answer was: {}", x);
-  }
+  let x = 3 * 4; // expensive computation
+  info!("the answer was: {}", x);
+
+  test_sl();
 
   info!("Hello World");
+}
+
+fn test_sl() {
+  info!("this is a message!");
 }
