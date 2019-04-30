@@ -1,0 +1,9 @@
+[package]
+name = "datastruct"
+version = "0.1.0"
+authors = ["AlfieriChou <alfierichou@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+simple_logger = "1.0.1"
