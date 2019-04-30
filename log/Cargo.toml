@@ -1,0 +1,9 @@
+[package]
+name = "log"
+version = "0.1.0"
+authors = ["AlfieriChou <alfierichou@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+env_logger = "0.6.1"
